@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #00ff00;
+  --secondary-color: #00740f;
+  --background-color: #f7f7f7;
+  --font-color: #2e2e2e;
+  --title-font: "Rubik", sans-serif;
+  --title-weight: 400;
+  --normal-font: "Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container_flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px !important;
+  padding: 2%;
+}
+
+.logo_title {
+  padding: 2% 2%;
+}
+
+.logo_title p {
+  font-family: var(--title-font);
+  font-weight: var(--title-weight);
+  font-size: 30px;
+  color: var(--font-color);
+}
+
+.logo_title p span {
+  color: var(--primary-color);
+}
+
+.text_to_decode {
+  padding: 20px;
+  border: none;
+  background-color: var(--background-color);
+  font-family: var(--normal-font);
+  font-size: 24px;
+  resize: none;
+  width: 90%;
+  height: 500px;
+  color: var(--secondary-color);
+  gap: 10px;
+}
+.text_to_decode::placeholder {
+  color: var(--primary-color);
+}
+
+.decode_user_input {
+  width: 70%;
+}
+
+.decode_user_input button {
+  padding: 10px 20px;
+  min-width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--normal-font);
+  font-weight: 700;
+  background-color: white;
+  color: var(--font-color);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.crypt_btn {
+  background-color: var(--primary-color) !important;
+  box-shadow: 1px 5px 54px 5px rgba(0, 255, 0, 0.22);
+  -webkit-box-shadow: 1px 5px 54px 5px rgba(0, 255, 0, 0.22);
+  -moz-box-shadow: 1px 5px 54px 5px rgba(0, 255, 0, 0.22);
+}
+
+.img_decode_output {
+  margin-top: -600px !important;
+  width: 90%;
+  margin-bottom: 70px;
+}
+
+.output_user_input {
+  width: 30%;
+  padding: 20px;
+  padding-bottom: 40px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: var(--normal-font);
+  text-align: center;
+  align-content: center;
+  box-shadow: 1px 5px 54px 5px rgba(161, 161, 161, 0.22);
+  -webkit-box-shadow: 1px 5px 54px 5px rgba(161, 161, 161, 0.22);
+  -moz-box-shadow: 1px 5px 54px 5px rgba(161, 161, 161, 0.22);
+}
+
+.output_user_input h3 {
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+.crypt_return {
+  display: block;
+  width: 100%;
+}
+
+.output_user_input p {
+  color: var(--font-color);
+  font-weight: 300;
+}
+
+.erro_mensage {
+  margin: 10px;
+  color: var(--font-color);
+  font-family: var(--normal-font);
+}
+
+footer {
+  color: var(--font-color);
+  height: 100px;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  font-family: var(--normal-font);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+@media (max-width: 1024px) {
+  .container_flex {
+    flex-direction: column;
+  }
+  .output_user_input {
+    margin-top: 10px !important;
+    width: 90%;
+  }
+  .img_decode_output{
+  margin-top: -500px !important;
+  }
+}

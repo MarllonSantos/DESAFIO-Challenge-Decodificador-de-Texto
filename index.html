@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Desafio - Iniciante em Programação T7 - ONE</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo_title">
+            <p>Anagram<span>.ME</span></p>
+        </div>
+    </header>
+    <main class="container_flex">
+        <div class="decode_user_input">
+            <textarea type="text" id="user_input" class="text_to_decode" placeholder="Insert your text to Crypt or Incrypt..."></textarea><br>
+            <p id="erro_no_msg" class="erro_mensage">You need insert text to decode.</p>    
+            <button class="crypt_btn" onClick="cryptBtn()">Anagram!</button>  
+            <button id="decodeBTN" onClick="descrypt()">Undo!</button>
+        </div>
+        <div class="output_user_input" class="crypt_return">
+            <textarea type="text" id="crypt_return" class="text_to_decode"></textarea>
+            <div id="no_mensagem" class="no_mensagem">
+                <img src="./img/undraw_coffee_time_e8cw.svg" alt="" class="img_decode_output">
+                <h3>Waiting to crypt!</h3>
+                <p>No text received, you can type now.</p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        Created by <strong><a href="https://github.com/MarllonSantos" target="_blank">Marllon Santos</a></strong></p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
